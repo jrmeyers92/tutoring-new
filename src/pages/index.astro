@@ -1,41 +1,22 @@
 ---
-// src/pages/index.astro
+import Layout from "../layouts/Layout.astro";
+
+const title = "Early Education Tutoring St. Louis | Kindergarten & 1st Grade Tutor | In-Person & Virtual";
+const description = "Expert early childhood tutoring in St. Louis, MO. Master's in Early Education, 7+ years teaching experience. Kindergarten, 1st grade, reading, math. In-person & virtual sessions available.";
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Early Education Tutoring - Expert Kindergarten & 1st Grade Tutoring</title>
-    <meta name="description" content="Professional early childhood education tutoring with 7+ years of teaching experience and a Master's degree from the University of Arkansas">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                </svg>
-                <span>Early Education Tutoring</span>
-            </div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-    </header>
-
+<Layout title={title} description={description}>
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Nurturing Young Minds Through <span class="highlight">Expert Tutoring</span></h1>
+            <h1>Nurturing Young Minds in <span class="highlight">St. Louis</span></h1>
             <p class="lead">Professional early childhood education tutoring with 7+ years of teaching experience and a Master's degree from the University of Arkansas</p>
-            <a href="#contact" class="btn btn-primary">Schedule a Session</a>
+            <div class="hero-badges">
+                <span class="badge">📍 St. Louis, MO</span>
+                <span class="badge">🏠 In-Person Available</span>
+                <span class="badge">💻 Virtual Sessions</span>
+            </div>
+            <a href="#contact" class="btn btn-primary">Schedule a Free Consultation</a>
         </div>
     </section>
 
@@ -46,7 +27,8 @@
                 <div>
                     <h2>About Your Tutor</h2>
                     <p>With a Master's degree in Early Education from the University of Arkansas and over 7 years of hands-on teaching experience, I bring a wealth of knowledge and passion to every tutoring session.</p>
-                    <p>My diverse background includes teaching internationally in Bangkok, working with kindergarten and 1st grade students, and serving as a teaching coach for pre-K educators. This unique combination allows me to provide personalized, effective tutoring that meets each child where they are.</p>
+                    <p>My diverse background includes teaching internationally in Bangkok, working with kindergarten and 1st grade students in the Denver and St. Louis region, and serving as a teaching coach for pre-K educators. This unique combination allows me to provide personalized, effective tutoring that meets each child where they are.</p>
+                    <p><strong>Serving families throughout the St. Louis metropolitan area with flexible in-person and virtual tutoring options.</strong></p>
                 </div>
                 <div class="credentials">
                     <div class="credential-card">
@@ -100,20 +82,7 @@
                         <p>Mentored and coached pre-K teachers on effective teaching methodologies, classroom management, and curriculum development. Provided ongoing professional development and support.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                            <path d="M2 12h20"></path>
-                        </svg>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>International Teaching - Bangkok</h3>
-                        <p class="timeline-duration">Multiple Years</p>
-                        <p>Taught early childhood education in Bangkok, Thailand, gaining invaluable cross-cultural teaching experience and adapting curriculum for diverse learning environments.</p>
-                    </div>
-                </div>
+
                 <div class="timeline-item">
                     <div class="timeline-icon">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -124,9 +93,23 @@
                     <div class="timeline-content">
                         <h3>Kindergarten & 1st Grade Teacher</h3>
                         <p class="timeline-duration">7+ Years Total Experience</p>
-                        <p>Developed and implemented engaging, age-appropriate curriculum for kindergarten and 1st grade students, fostering love of learning and building strong foundational skills.</p>
+                        <p>Developed and implemented engaging, age-appropriate curriculum for kindergarten and 1st grade students in the St. Louis area, fostering love of learning and building strong foundational skills.</p>
                     </div>
                 </div>
+								<div class="timeline-item">
+									<div class="timeline-icon">
+											<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+													<circle cx="12" cy="12" r="10"></circle>
+													<path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+													<path d="M2 12h20"></path>
+											</svg>
+									</div>
+									<div class="timeline-content">
+											<h3>International Teaching - Bangkok</h3>
+											<p class="timeline-duration">1 Year</p>
+											<p>Taught early childhood education in Bangkok, Thailand, gaining invaluable cross-cultural teaching experience and adapting curriculum for diverse learning environments.</p>
+									</div>
+							</div>
             </div>
         </div>
     </section>
@@ -135,7 +118,7 @@
     <section id="services" class="services">
         <div class="container">
             <h2>Tutoring Services</h2>
-            <p class="section-subtitle">Personalized learning experiences tailored to your child's unique needs</p>
+            <p class="section-subtitle">Personalized learning experiences tailored to your child's unique needs - Available in-person throughout St. Louis or virtually</p>
             <div class="services-grid">
                 <div class="service-card">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -198,7 +181,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Get Started Today</h2>
-            <p class="section-subtitle">Schedule a consultation to discuss your child's learning needs</p>
+            <p class="section-subtitle">Schedule a free consultation to discuss your child's learning needs</p>
             <div class="grid-2">
                 <div class="contact-info">
                     <h3>Why Choose Our Tutoring?</h3>
@@ -237,17 +220,23 @@
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            Flexible scheduling options
+                            Flexible in-person or virtual sessions
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Serving the St. Louis, MO region
                         </li>
                     </ul>
                 </div>
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <label for="name">Parent/Guardian Name</label>
+                        <label for="name">Parent/Guardian Name *</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Email *</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
@@ -255,7 +244,16 @@
                         <input type="tel" id="phone" name="phone">
                     </div>
                     <div class="form-group">
-                        <label for="grade">Child's Grade Level</label>
+                        <label for="sessionType">Preferred Session Type *</label>
+                        <select id="sessionType" name="sessionType" required>
+                            <option value="">Select session type</option>
+                            <option value="in-person">In-Person (St. Louis area)</option>
+                            <option value="virtual">Virtual</option>
+                            <option value="flexible">Flexible - Either works</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="grade">Child's Grade Level *</label>
                         <select id="grade" name="grade" required>
                             <option value="">Select grade level</option>
                             <option value="pre-k">Pre-K</option>
@@ -265,7 +263,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Tell me about your child's learning needs</label>
+                        <label for="message">Tell me about your child's learning needs *</label>
                         <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
@@ -273,436 +271,328 @@
             </div>
         </div>
     </section>
+</Layout>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Early Education Tutoring. All rights reserved.</p>
-            <p>Empowering young learners to reach their full potential</p>
-        </div>
-    </footer>
+<style>
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+        padding: 6rem 0;
+        text-align: center;
+    }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        color: #1f2937;
+        line-height: 1.2;
+    }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
+    .hero .highlight {
+        color: #2563eb;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+    .hero .lead {
+        font-size: 1.25rem;
+        color: #6b7280;
+        max-width: 800px;
+        margin: 0 auto 1.5rem;
+    }
 
-        /* Header */
-        header {
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
+    .hero-badges {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    .badge {
+        background: white;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        font-size: 0.95rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        color: #374151;
+        font-weight: 500;
+    }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #2563eb;
-        }
+    /* About Section */
+    .about {
+        background: white;
+        padding: 5rem 0;
+    }
 
-        .logo svg {
-            color: #2563eb;
-        }
+    .about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: #1f2937;
+    }
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
+    .about p {
+        font-size: 1.125rem;
+        color: #6b7280;
+        margin-bottom: 1rem;
+    }
 
-        .nav-links a {
-            color: #666;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
+    .credentials {
+        display: grid;
+        gap: 1.5rem;
+    }
 
-        .nav-links a:hover {
-            color: #2563eb;
-        }
+    .credential-card {
+        background: #f9fafb;
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        border: 2px solid #e5e7eb;
+    }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
-            padding: 6rem 0;
-            text-align: center;
-        }
+    .credential-card svg {
+        color: #2563eb;
+        margin-bottom: 1rem;
+    }
 
+    .credential-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        color: #1f2937;
+    }
+
+    .credential-card p {
+        font-size: 0.95rem;
+        color: #6b7280;
+        margin: 0;
+    }
+
+    /* Experience Section */
+    .experience {
+        background: #f9fafb;
+        padding: 5rem 0;
+    }
+
+    .experience h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: #1f2937;
+        text-align: center;
+    }
+
+    .timeline {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .timeline-item {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+    .timeline-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 18px;
+        top: 50px;
+        width: 2px;
+        height: calc(100% + 1.5rem);
+        background: #e5e7eb;
+    }
+
+    .timeline-icon {
+        width: 40px;
+        height: 40px;
+        background: #2563eb;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        z-index: 1;
+    }
+
+    .timeline-icon svg {
+        color: white;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #1f2937;
+    }
+
+    .timeline-duration {
+        color: #2563eb;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .timeline-content p:last-child {
+        color: #6b7280;
+    }
+
+    /* Services Section */
+    .services {
+        background: white;
+        padding: 5rem 0;
+    }
+
+    .services h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #1f2937;
+        text-align: center;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        font-size: 1.125rem;
+        color: #6b7280;
+        margin-bottom: 3rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .service-card {
+        background: #f9fafb;
+        padding: 2rem;
+        border-radius: 0.75rem;
+        border: 2px solid #e5e7eb;
+        transition: all 0.3s;
+    }
+
+    .service-card:hover {
+        border-color: #2563eb;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .service-card svg {
+        color: #2563eb;
+        margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #1f2937;
+    }
+
+    .service-card p {
+        color: #6b7280;
+        margin: 0;
+    }
+
+    /* Contact Section */
+    .contact {
+        background: #f9fafb;
+        padding: 5rem 0;
+    }
+
+    .contact h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #1f2937;
+        text-align: center;
+    }
+
+    .contact-info h3 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+        color: #1f2937;
+    }
+
+    .benefits {
+        list-style: none;
+    }
+
+    .benefits li {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+        color: #4b5563;
+        font-size: 1.1rem;
+    }
+
+    .benefits svg {
+        color: #10b981;
+        flex-shrink: 0;
+    }
+
+    .contact-form {
+        background: white;
+        padding: 2rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #374151;
+        font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 2px solid #e5e7eb;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-family: inherit;
+        transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #2563eb;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
         .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            color: #1f2937;
-            line-height: 1.2;
-        }
-
-        .hero .highlight {
-            color: #2563eb;
+            font-size: 2rem;
         }
 
         .hero .lead {
-            font-size: 1.25rem;
-            color: #6b7280;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
             font-size: 1rem;
         }
 
-        .btn-primary {
-            background: #2563eb;
-            color: white;
-            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
-        }
-
-        .btn-primary:hover {
-            background: #1d4ed8;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(37, 99, 235, 0.4);
-        }
-
-        /* About Section */
-        .about {
-            background: white;
-            padding: 5rem 0;
-        }
-
-        .about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: #1f2937;
-        }
-
-        .about p {
-            font-size: 1.125rem;
-            color: #6b7280;
-            margin-bottom: 1rem;
-        }
-
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            align-items: start;
-        }
-
-        .credentials {
-            display: grid;
-            gap: 1.5rem;
-        }
-
-        .credential-card {
-            background: #f9fafb;
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            border: 2px solid #e5e7eb;
-        }
-
-        .credential-card svg {
-            color: #2563eb;
-            margin-bottom: 1rem;
-        }
-
-        .credential-card h3 {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-            color: #1f2937;
-        }
-
-        .credential-card p {
-            font-size: 0.95rem;
-            color: #6b7280;
-            margin: 0;
-        }
-
-        /* Experience Section */
-        .experience {
-            background: #f9fafb;
-            padding: 5rem 0;
-        }
-
-        .experience h2 {
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #1f2937;
-            text-align: center;
-        }
-
-        .timeline {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .timeline-item {
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-            position: relative;
-        }
-
-        .timeline-item:not(:last-child)::after {
-            content: '';
-            position: absolute;
-            left: 18px;
-            top: 50px;
-            width: 2px;
-            height: calc(100% + 1.5rem);
-            background: #e5e7eb;
-        }
-
-        .timeline-icon {
-            width: 40px;
-            height: 40px;
-            background: #2563eb;
-            border-radius: 50%;
-            display: flex;
+        .hero-badges {
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            z-index: 1;
-        }
-
-        .timeline-icon svg {
-            color: white;
-        }
-
-        .timeline-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: #1f2937;
-        }
-
-        .timeline-duration {
-            color: #2563eb;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-content p:last-child {
-            color: #6b7280;
-        }
-
-        /* Services Section */
-        .services {
-            background: white;
-            padding: 5rem 0;
-        }
-
-        .services h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #1f2937;
-            text-align: center;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.125rem;
-            color: #6b7280;
-            margin-bottom: 3rem;
         }
 
         .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: 1fr;
         }
+    }
+</style>
 
-        .service-card {
-            background: #f9fafb;
-            padding: 2rem;
-            border-radius: 0.75rem;
-            border: 2px solid #e5e7eb;
-            transition: all 0.3s;
-        }
-
-        .service-card:hover {
-            border-color: #2563eb;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        .service-card svg {
-            color: #2563eb;
-            margin-bottom: 1rem;
-        }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #1f2937;
-        }
-
-        .service-card p {
-            color: #6b7280;
-            margin: 0;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: #f9fafb;
-            padding: 5rem 0;
-        }
-
-        .contact h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #1f2937;
-            text-align: center;
-        }
-
-        .contact-info h3 {
-            font-size: 1.75rem;
-            margin-bottom: 1.5rem;
-            color: #1f2937;
-        }
-
-        .benefits {
-            list-style: none;
-        }
-
-        .benefits li {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-            color: #4b5563;
-            font-size: 1.1rem;
-        }
-
-        .benefits svg {
-            color: #10b981;
-            flex-shrink: 0;
-        }
-
-        .contact-form {
-            background: white;
-            padding: 2rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #374151;
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 2px solid #e5e7eb;
-            border-radius: 0.5rem;
-            font-size: 1rem;
-            font-family: inherit;
-            transition: border-color 0.3s;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #2563eb;
-        }
-
-        .form-group textarea {
-            resize: vertical;
-        }
-
-        /* Footer */
-        footer {
-            background: #1f2937;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        footer p {
-            margin: 0.25rem 0;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero .lead {
-                font-size: 1rem;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your interest! We will contact you soon.');
-            this.reset();
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+<script>
+    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your interest! We will contact you soon.');
+        this.reset();
+    });
+</script>
